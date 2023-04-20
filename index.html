@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Upload Exc</title>
+  </head>
+  <body>
+    <header class="Nav-div">
+      <nav class="navigation">
+        <img
+          class="navLogo"
+          src="/img/fields-smart-file-upload (1).svg"
+          alt="question logo"
+        />
+        <div class="headNavigation">
+          <a
+            class="Main-Nav-link"
+            href="javascript:void(0)"
+            onclick="openPopupLog()"
+            >log in</a
+          >
+          <a
+            class="Main-Nav-link nav-cta"
+            href="javascript:void(0)"
+            onclick="openPopupSign()"
+            >Sign up</a
+          >
+        </div>
+      </nav>
+    </header>
+    <article>
+      <section class="hero-section">
+        <div class="hero container">
+          <div class="hero-text-box container">
+            <!-- Upload -->
+
+            <div class="form-container">
+              <h2>Upload Form</h2>
+              <form>
+                <div>
+                  <label for="file">Choose a kind of file to upload:</label>
+                  <select id="myDropdown">
+                    <option value="item1">
+                      کارت ملی
+                      <img
+                        class="checkmark"
+                        src="../img/checkmark-done-circle-outline.svg"
+                        alt="sada"
+                      />
+                    </option>
+                    <option value="item2">صفحه اول شناسنامه</option>
+                    <option value="item3">صفحه دوم شناسنامه</option>
+                    <option value="item4">کارت پایان خدمت</option>
+                    <option value="item5">مدرک تحصیلی کارشناسی</option>
+                  </select>
+                </div>
+                <input type="file" id="file" name="file" required />
+                <button id="myButton">Click Me</button>
+              </form>
+            </div>
+          </div>
+          <div class="hero-img-box">
+            <a href="#" class="uploadimg-link">
+              <img
+                src="../img/upload-your-files.svg"
+                alt="a man pushing file to web"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+    </article>
+    <script src="../Js/model.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
